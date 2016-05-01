@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Flexjs-docs by flex-extras</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Flexjs-docs by flex-extras</title>
   </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Flexjs-docs</h1>
-      <h2 class="project-tagline">Documentation Playground</h2>
-      <a href="https://github.com/flex-extras/flexjs-docs" class="btn">View on GitHub</a>
-      <a href="https://github.com/flex-extras/flexjs-docs/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/flex-extras/flexjs-docs/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
 
-    <section class="main-content">
-      <h1>
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Flexjs-docs</h1>
+          <h2>Documentation Playground</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/flex-extras/flexjs-docs/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/flex-extras/flexjs-docs/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/flex-extras/flexjs-docs" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
 <a id="about-flexjs" class="anchor" href="#about-flexjs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About FlexJS™</h1>
 
 <p>FlexJS™ is the name for a next-generation Flex SDK that has the goal of allowing applications developed in MXML and ActionScript to not only run in the Flash/AIR runtimes, but also to run natively in the browser without Flash, on mobile devices as a PhoneGap/Cordova application, and in embedded JS environments such as Chromium Embedded Framework. FlexJS has the potential to allow your MXML and ActionScript code to run in even more places than Flash currently does.
@@ -38,7 +50,7 @@ Overview</p>
 
 <p>The combination of theses things made it possible to make fewer mistakes when writing code, thus saving time and improving productivity.  Declarative Languages provide a schematic, or diagram of the pieces of the application, and are more terse than the equivalent in ActionScript or JavaScript.  ActionScript understands classes and interfaces so it can do a better job of enforcing correct usage of APIs.  The verifier catches errors at runtime.  The IDEs can provide better code assistance because the language is more structured.</p>
 
-<p>A presentation from ApacheCon 2015 that explores things deeper is <a href="http://events.linuxfoundation.org/sites/events/files/slides/FlexJS_ApacheCon_2015.pdf"></a></p>
+<p>A presentation from ApacheCon 2015 that explores things deeper is <a href="http://events.linuxfoundation.org/sites/events/files/slides/FlexJS_ApacheCon_2015.pdf">available here</a>.</p>
 
 <p>Developing an application by using one or more frameworks really amounts to attaching framework components to each other via code you write.  With JavaScript, you can literally attach anything to anything.  You can assign a String to an variable that was expecting an int.  JavaScript has some 'compilers' that try to catch things like that, but once you start using Object or other low-level base classes like EventDispatcher, you can easily cause the compiler to lose track of the actual API parameters involved and not find out until too late.  Sure you can go around and annotate the JavaScript so the 'compilers' can try to help you, but often you may accept code in library form from somebody, and even load that code at runtime.  The verifier tries to catch those kinds of problems.</p>
 
@@ -75,15 +87,15 @@ Summary</p>
 <p>FlexJS should provide the lowest-cost and quickest path to developing applications for the web and mobile devices, while also future-proofing existing Flex code bases, and providing similar developer-productivity and quality control advantages that the current Flex SDK provided.</p>
 
 <p>For more details and information see <a href="https://cwiki.apache.org/confluence/display/FLEX/FlexJS+FAQ">FlexJS FAQ</a>.</p>
+        </section>
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/flex-extras/flexjs-docs">Flexjs-docs</a> is maintained by <a href="https://github.com/flex-extras">flex-extras</a>.</span>
+        <footer>
+          Flexjs-docs is maintained by <a href="https://github.com/flex-extras">flex-extras</a><br>
+          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
+        
+      </div>
+    </div>
   </body>
 </html>
